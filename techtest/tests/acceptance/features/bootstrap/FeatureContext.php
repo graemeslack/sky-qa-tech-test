@@ -31,6 +31,20 @@ class FeatureContext extends BehatContext {
     public function iHitMultiply() {
         $this->calculator->pressMultiply();
     }
+	
+	/**
+     * @When /^I hit "add"$/
+     */
+    public function iHitAdd() {
+        $this->calculator->pressAdd();
+    }
+
+	/**
+     * @When /^I hit "subtract"$/
+     */
+    public function iHitSubtract() {
+        $this->calculator->pressSubtract();
+    }
 
     /**
      * @When /^I hit "divide"$/
@@ -39,6 +53,27 @@ class FeatureContext extends BehatContext {
         $this->calculator->pressDivide();
     }
 
+	/**
+     * @When /^I hit "cubeRoot"$/
+     */
+    public function iHitCubeRoot() {
+        $this->calculator->pressCubeRoot();
+    }
+	
+	/**
+     * @When /^I hit "factorial"$/
+     */
+    public function iHitFactorial() {
+        $this->calculator->pressFactorial();
+    }
+	
+	/**
+     * @When /^I hit "decToHex"$/
+     */
+    public function iHitDecToHex() {
+        $this->calculator->pressDecToHex();
+    }
+	
     /**
      * @Given /^I hit "equals"$/
      */
